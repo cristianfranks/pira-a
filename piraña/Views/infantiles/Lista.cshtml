@@ -1,0 +1,15 @@
+@model List<Usuario>
+<h1> Lista de Clientes registrados en nuestra tienda Piraña</h1>
+
+@if (Model.Count == 0) {
+    <div class="alert alert-warning text-center"> Aun no hay usuarios registrados </div>
+} else {
+    <ol>
+    @foreach (var p in Model) {
+        <li class="d-flex">
+            <div>"u.Usuarios"/></div>
+            <div>u.Usuarios</div>
+        </li> 
+    }
+    </ol>
+}
